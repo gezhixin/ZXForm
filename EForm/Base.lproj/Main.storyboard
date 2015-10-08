@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EForm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Im-4n-eV4" customClass="ZXFormView" customModule="EForm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCE-Av-NAo">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="简单的电子表格" id="RQt-QA-Ymm"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UCE-Av-NAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Cg-IB-LSS"/>
+                            <constraint firstItem="9Im-4n-eV4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DvB-BW-TEJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Im-4n-eV4" secondAttribute="bottom" id="EDu-fA-6fH"/>
+                            <constraint firstAttribute="trailing" secondItem="9Im-4n-eV4" secondAttribute="trailing" id="dKs-P0-rSB"/>
+                            <constraint firstItem="UCE-Av-NAo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="kzP-nc-JrY"/>
+                            <constraint firstItem="9Im-4n-eV4" firstAttribute="top" secondItem="UCE-Av-NAo" secondAttribute="bottom" id="nfQ-0I-EQd"/>
+                            <constraint firstAttribute="trailing" secondItem="UCE-Av-NAo" secondAttribute="trailing" id="sKC-Su-rgu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="formView" destination="9Im-4n-eV4" id="oxr-oC-A8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="299"/>
+        </scene>
+    </scenes>
+</document>
